@@ -1,0 +1,174 @@
+body{
+    padding: 20px 50px;
+    background-color: black;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header .title{
+    border: 2px solid #fff;
+    color: white;
+    padding: 0px 40px;
+}
+
+ul {
+    display: flex;
+}
+
+ul li{
+    list-style: none;
+    padding: 10px;
+}
+li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+li a:hover{
+    text-decoration: underline;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: black;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+    margin-top: 50px;
+}
+.sidebar li a{
+    width: 100%;
+}
+
+
+.menu-button{
+    display: none;
+}
+
+.content{
+    display: flex;
+    color: #fff;
+    margin-top: 100px;
+}
+
+.left{
+    width: 50%;
+    margin-top: 80px;
+
+}
+
+.left-text1{
+    font-size: 50px;
+}
+.left-text2{
+    font-size: 24px;
+}
+
+.info{
+    display: flex;
+}
+
+.info p{
+    font-size: 24px;
+}
+.info img{
+    width: 26px;
+    /* height: 24px; */
+   
+}
+
+.right .image1{
+    width: 777px;
+    height: 555px;
+    position: relative;
+}
+.container{
+    border: 2px solid black;
+    background-color: black;
+    color: fff;
+    width: 410px;
+    height: 189px;
+    position: relative;
+    margin-top: -100px;
+    padding: 20px;
+    margin-left: 300px;
+}
+
+
+.image2{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.right-cont{
+    display: flex;
+}
+
+.text{
+    
+    margin-top: -13px;
+    line-height: normal;
+} 
+
+.p1{
+    font-size: 20px;
+    font-weight: bold; 
+}
+
+.footer{
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+@media(max-width: 600px){
+    .hideOnMobile{
+        display: none;
+    }
+    .sidebar{
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+    }
+
+  
+
+    .menu-button{
+        display: block;
+        /* width: 60px;
+        height: 60px;
+        color: white; */
+    }
+
+
+    .content{
+        flex-direction: column;
+    }
+    .left-text1{
+        font-size: 36px;
+    }
+    .left{
+        width: 100%;
+    }
+    
+    .footer{
+        text-align: center;
+    }
+}
